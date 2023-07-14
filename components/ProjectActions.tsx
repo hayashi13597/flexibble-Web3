@@ -21,6 +21,10 @@ const ProjectActions = ({ projectId }: Props) => {
   const router = useRouter();
 
   const handleDeleteProject = async () => {
+    const check = confirm("Are you sure you want to delete this project?");
+
+    if (!check) return;
+
     setIsDeleting(true);
 
     const { token } = await fetchToken();
