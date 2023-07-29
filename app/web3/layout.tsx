@@ -4,11 +4,6 @@ import { Sepolia } from "@thirdweb-dev/chains";
 import { ThirdwebProvider } from "@thirdweb-dev/react";
 import { StateContextProvider } from "@/context";
 
-export const metadata = {
-  title: "Crow Funding",
-  description: "Crow Funding website",
-};
-
 export default function Web3Layout({
   children,
 }: {
