@@ -20,11 +20,9 @@ const FundCard = ({
       className="sm:w-[288px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer"
       onClick={handleClick}
     >
-      <Image
+      <img
         src={image}
         alt="fund"
-        width={1000}
-        height={158}
         className="w-full h-[158px] object-cover rounded-[15px]"
       />
 
