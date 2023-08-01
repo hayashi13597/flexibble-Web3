@@ -9,7 +9,7 @@ const Categories = () => {
   const pathName = usePathname();
   const searchParams = useSearchParams();
 
-  const category = searchParams.get("category") || "";
+  const category = searchParams.get("category");
 
   const handleTags = (item: string) => {
     router.push(`${pathName}?category=${item}`);

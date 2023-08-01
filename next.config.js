@@ -2,22 +2,24 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp"],
-    domains: [
-      "lh3.googleusercontent.com",
-      "res.cloudinary.com",
-      "task.com",
-      "img.freepik.com",
-    ],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**.**.com",
+        hostname: "**",
+        port: "",
+        pathname: "**",
+      },
+
+      {
+        protocol: "http",
+        hostname: "**",
+        port: "",
+        pathname: "**",
       },
     ],
   },
   experimental: {
-    serverComponentsExternalPackages: ["cloudinary", "graphql-request"],
+    serverActions: true,
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
