@@ -186,6 +186,7 @@ const CampaignDetails = () => {
 
               <CustomButton
                 btnType="button"
+                daysLeft={remainingDays}
                 title="Fund Campaign"
                 styles="w-full bg-[#8c6dfd]"
                 handleClick={handleDonate}
